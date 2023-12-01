@@ -1,0 +1,2 @@
+Find what ports to use for docker-compose file, pass both docker files to bingchat in order
+to see some possible alternate ports for the testing server.
