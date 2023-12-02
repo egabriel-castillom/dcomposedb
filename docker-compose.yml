@@ -3,11 +3,11 @@ services:
   web:
     build: ./portforever
     ports:
-      - "5000:5000"
+      - "5001:5000"
   nginx:
     build: ./serversettings
     ports:
-      - "80:80"
+      - "8080:80"
     links:
       - web
   db:
@@ -17,4 +17,4 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "3306:3306"
+      - "3307:3306"
